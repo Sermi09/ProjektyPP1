@@ -31,9 +31,29 @@
 		<Compiler>
 			<Add option="-Wall" />
 		</Compiler>
+		<Unit filename="AI.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="AI.h" />
+		<Unit filename="board.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="board.h" />
 		<Unit filename="main.c">
 			<Option compilerVar="CC" />
 		</Unit>
+		<Unit filename="player.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="player.h" />
+		<Unit filename="points.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="points.h" />
+		<Unit filename="queens.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="queens.h" />
 		<Extensions />
 	</Project>
 </CodeBlocks_project_file>
