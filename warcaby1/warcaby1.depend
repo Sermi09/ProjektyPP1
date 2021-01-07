@@ -1,7 +1,7 @@
 # depslib dependency file v1.0
 1609961344 source:/home/student/Pulpit/projekcik/warcaby1/pull_board_up.c
 
-1609963408 source:/home/student/Pulpit/projekcik/warcaby1/main.c
+1610028908 source:/home/student/Pulpit/projekcik/warcaby1/main.c
 	<stdio.h>
 	<stdlib.h>
 	"board.h"
@@ -9,13 +9,14 @@
 	"AI.h"
 	"points.h"
 	"queens.h"
+	"end.h"
 
-1609963118 source:/home/student/Pulpit/projekcik/warcaby1/board.c
+1610028671 source:/home/student/Pulpit/projekcik/warcaby1/board.c
 	"board.h"
 
 1609961886 /home/student/Pulpit/projekcik/warcaby1/board.h
 
-1609966806 source:/home/student/Pulpit/projekcik/warcaby1/player.c
+1610024809 source:/home/student/Pulpit/projekcik/warcaby1/player.c
 	"player.h"
 
 1609962131 /home/student/Pulpit/projekcik/warcaby1/player.h
@@ -25,13 +26,18 @@
 
 1609962394 /home/student/Pulpit/projekcik/warcaby1/AI.h
 
-1609962762 /home/student/Pulpit/projekcik/warcaby1/points.h
+1610028926 /home/student/Pulpit/projekcik/warcaby1/points.h
 
-1609963159 source:/home/student/Pulpit/projekcik/warcaby1/points.c
+1610027541 source:/home/student/Pulpit/projekcik/warcaby1/points.c
 	"points.h"
 
 1609963159 source:/home/student/Pulpit/projekcik/warcaby1/queens.c
 	"queens.h"
 
 1609963016 /home/student/Pulpit/projekcik/warcaby1/queens.h
+
+1610028846 source:/home/student/Pulpit/projekcik/warcaby1/end.c
+	"end.h"
+
+1610028846 /home/student/Pulpit/projekcik/warcaby1/end.h
 

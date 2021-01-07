@@ -47,16 +47,16 @@ void fill_board(char board[8][8])
     board[7][6] = player_mark;
     board[6][7] = player_mark;
 
-    board[0][1] = AI_mark;
-    board[0][3] = AI_mark;
-    board[0][5] = AI_mark;
-    board[0][7] = AI_mark;
-    board[1][0] = AI_mark;
-    board[1][2] = AI_mark;
-    board[1][4] = AI_mark;
-    board[1][6] = AI_mark;
-    board[2][1] = AI_mark;
-    board[2][3] = AI_mark;
-    board[2][5] = AI_mark;
-    board[2][7] = AI_mark;
+    board[0][1] = ' ';
+    board[0][3] = ' ';
+    board[0][5] = ' ';
+    board[0][7] = ' ';
+    board[1][0] = ' ';
+    board[1][2] = ' ';
+    board[1][4] = ' ';
+    board[1][6] = ' ';
+    board[2][1] = ' ';
+    board[2][3] = ' ';
+    board[2][5] = ' ';
+    board[2][7] = ' ';
 }

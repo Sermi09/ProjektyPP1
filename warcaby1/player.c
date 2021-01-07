@@ -27,12 +27,12 @@ void player_move(char board[8][8])
             {
                 for(int j=0;j<8;++j)
                 {
-                    if(board[i][j]==player_mark && ((board[i-1][j-1]==AI_mark || board[i-1][j-1]==AI_queen) && board[i-2][j-2]==' '))
+                    if(board[i][j]==player_mark && j-1!=0 && (board[i-1][j-1]==AI_mark || board[i-1][j-1]==AI_queen) && board[i-2][j-2]==' ')
                     {
                         printf("Musisz zbic!!!\n");
                         goto startp;
                     }
-                    else if (board[i][j]==player_mark && ((board[i-1][j-1]==AI_mark || board[i-1][j-1]==AI_queen) && board[i-2][j]==' '))
+                    else if (board[i][j]==player_mark && j+1!=7 && (board[i-1][j+1]==AI_mark || board[i-1][j+1]==AI_queen) && board[i-2][j+2]==' ')
                     {
                         printf("Musisz zbic!!!\n");
                         goto startp;
@@ -42,13 +42,13 @@ void player_move(char board[8][8])
             board[b2-1][b1-1]=player_mark;
             board[a2-1][a1-1]=' ';
          }
-         else if((board[b2-1][b1-1]==AI_mark || board[b2-1][b1-1]==AI_queen) && b1-a1<0 && board[b2-2][b1-2]==' ')
+         else if((board[b2-1][b1-1]==AI_mark || board[b2-1][b1-1]==AI_queen) && b1-1!=0 && b1-a1<0 && board[b2-2][b1-2]==' ')
          {
             board[b2-1][b1-1]=' ';
             board[b2-2][b1-2]=player_mark;
             board[a2-1][a1-1]=' ';
          }
-         else if((board[b2-1][b1-1]==AI_mark || board[b2-1][b1-1]==AI_queen) && b1-a1>0 && board[b2-2][b1]==' ')
+         else if((board[b2-1][b1-1]==AI_mark || board[b2-1][b1-1]==AI_queen) && b1+1!=7 && b1-a1>0 && board[b2-2][b1]==' ')
          {
             board[b2-1][b1-1]=' ';
             board[b2-2][b1]=player_mark;
@@ -79,22 +79,22 @@ void player_move(char board[8][8])
                 {
                     for(int j=0;j<8;++j)
                     {
-                        if(board[i][j]==player_mark && ((board[i-1][j-1]==AI_mark || board[i-1][j-1]==AI_queen) && board[i-2][j-2]==' '))
+                        if(board[i][j]==player_queen && ((board[i-1][j-1]==AI_mark || board[i-1][j-1]==AI_queen) && board[i-2][j-2]==' '))
                         {
                             printf("Musisz zbic!!!\n");
                             goto startp;
                         }
-                        else if(board[i][j]==player_mark && ((board[i-1][j-1]==AI_mark || board[i-1][j-1]==AI_queen) && board[i-2][j]==' '))
+                        else if(board[i][j]==player_queen && ((board[i-1][j-1]==AI_mark || board[i-1][j-1]==AI_queen) && board[i-2][j]==' '))
                         {
                             printf("Musisz zbic!!!\n");
                             goto startp;
                         }
-                        else if(board[i][j]==player_mark && ((board[i-1][j-1]==AI_mark || board[i-1][j-1]==AI_queen) && board[i][j]==' '))
+                        else if(board[i][j]==player_queen && ((board[i-1][j-1]==AI_mark || board[i-1][j-1]==AI_queen) && board[i][j]==' '))
                         {
                             printf("Musisz zbic!!!\n");
                             goto startp;
                         }
-                        else if(board[i][j]==player_mark && ((board[i-1][j-1]==AI_mark || board[i-1][j-1]==AI_queen) && board[i][j-2]==' '))
+                        else if(board[i][j]==player_queen && ((board[i-1][j-1]==AI_mark || board[i-1][j-1]==AI_queen) && board[i][j-2]==' '))
                         {
                             printf("Musisz zbic!!!\n");
                             goto startp;

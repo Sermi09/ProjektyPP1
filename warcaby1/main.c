@@ -5,6 +5,7 @@
 #include "AI.h"
 #include "points.h"
 #include "queens.h"
+#include "end.h"
 
 int main()
 {
@@ -19,6 +20,7 @@ int main()
        player_move(board);
        AI_move(board);
        swap_to_queen(board);
+       if(end_game(board)==1) moves+=101;
        moves+=2;
     }
     count_the_points(board);
