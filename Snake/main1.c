@@ -55,7 +55,7 @@ int zycia = 3;
 
 void krawedzie() {
     setXY(2, 2);
-    printf("Remaining Lives: ");
+    printf("Pozostale zycia: ");
     setXY(19, 2);
     printf("%d", zycia);
     int i;
